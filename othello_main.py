@@ -152,7 +152,7 @@ while True:
         sys.stdout.flush()
         for i in range(4):
             print(".", end="")
-            sleep(0.8)
+            sleep(1)
             sys.stdout.flush()
         symdict = {0: "   ", 1: "[_]", 2: "###", 3: " ~ "}
         letdict = {"A": 1, "B": 2, "C": 3, "D": 4,
