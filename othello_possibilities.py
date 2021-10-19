@@ -1,5 +1,6 @@
-from othello_board import flippy
+# This file just has one function which returns a board with all the the possible moves marked
 
+from othello_board import flippy
 
 def board_possi(b, play):
     for i in range(8):
@@ -12,18 +13,3 @@ def board_possi(b, play):
                 else:
                     b[i][j] = 0
     return b
-
-
-# board = [[0, 0, 0, 0, 0, 0, 0, 0],
-#          [0, 0, 0, 0, 0, 0, 0, 0],
-#          [0, 0, 0, 0, 0, 0, 0, 0],
-#          [0, 0, 3, 1, 2, 0, 0, 0],
-#          [0, 0, 1, 2, 1, 0, 0, 0],
-#          [0, 0, 2, 0, 0, 0, 0, 0],
-#          [0, 0, 0, 0, 0, 0, 0, 0],
-#          [0, 0, 0, 0, 0, 0, 0, 0]]
-# player = 1
-
-# board = board_possi(board, player)
-# for i in board:
-#     print(i)
