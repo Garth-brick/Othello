@@ -1,5 +1,5 @@
-# learn pygame
-# make 1 player mode
+# one player mode is still in the making
+# this file contains the major chunk of the code
 
 import os
 from time import sleep
