@@ -144,7 +144,7 @@ def letsgo():
 cleanup()
 
 while True:
-    print("How many players?\n(A) 1\t(B) 2\t(C) 3\n")
+    print("How many players?\n(A) 1\t(B) 2\n")
     players = input()
     if str(players) in "bB2":
         cleanup()
