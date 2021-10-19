@@ -1,3 +1,6 @@
+# this file has one function which flips all the pieces that need to be flipped after every turn and returns the new board
+# if check=True, then it returns a boolean value denoting whether a move results in any flips
+
 def flippy(board, row_change, col_change, check=False):
     from itertools import permutations
     flip_dic = {1: 2, 2: 1, 3: 3, 0: 0}
@@ -34,22 +37,3 @@ def flippy(board, row_change, col_change, check=False):
         if not flip_cords_final == []:
             is_changed = True
             return is_changed
-
-
-# board = [[1, 0, 0, 2, 0, 1, 2, 1],
-#          [0, 2, 0, 2, 0, 1, 0, 2],
-#          [0, 0, 2, 2, 2, 0, 0, 1],
-#          [0, 1, 2, 1, 2, 2, 1, 2],
-#          [0, 0, 2, 2, 2, 0, 0, 2],
-#          [0, 2, 0, 2, 0, 2, 0, 2],
-#          [1, 0, 0, 2, 0, 0, 1, 2],
-#          [2, 2, 2, 1, 2, 2, 2, 2]]
-# col_change = 3
-# row_change = 0
-
-# board, bool = flippy(board, row_change, col_change)
-
-# print("\nFlipped board: ")
-# for i in board:
-#     print(i)
-# print(bool)
